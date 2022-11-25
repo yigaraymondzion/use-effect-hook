@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { useState, useEffect } from "react";
 
 function Effecthook() {
-  const [currentResource, setResources] = useState("users");
+  const [currentResource, setResources] = useState("USERS");
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -19,14 +19,14 @@ function Effecthook() {
     <Container>
       <Row>
         <Col>
-          <Button variant="primary" onClick={() => setResources("users")}>
-            Users
+          <Button variant="primary" onClick={() => setResources("USERS")}>
+            USERS
           </Button>
-          <Button variant="success" onClick={() => setResources("posts")}>
-            Posts
+          <Button variant="success" onClick={() => setResources("POSTS")}>
+            POSTS
           </Button>
-          <Button variant="info" onClick={() => setResources("comments")}>
-            Comments
+          <Button variant="info" onClick={() => setResources("COMMENTS")}>
+            COMMENTS
           </Button>
           <div>{currentResource}</div>
           <div className="item-box">
